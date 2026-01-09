@@ -10,7 +10,7 @@ This lab simulates a basic enterprise environment with an attacker VM, victim en
 |-----------|------|-------------|------------|
 | Host Machine | Splunk SIEM | Windows 11 | 192.168.31.50 |
 | Windows VM | Victim Endpoint | Windows 11 | 192.168.31.52 |
-| Kali VM | Attacker (optional) | Kali Linux | DHCP |
+| Kali VM | Attacker | Kali Linux | DHCP |
 
 ## Network Topology
 ```
