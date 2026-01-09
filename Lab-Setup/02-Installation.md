@@ -34,7 +34,7 @@
 ### On Windows VM
 1. Download Splunk Universal Forwarder
 2. During installation:
-   - Receiving Indexer: 192.168.1.50:9997
+   - Receiving Indexer: 192.168.31.50:9997
    - Set admin credentials (username & password)
 
 ## Step 3: Sysmon Installation
