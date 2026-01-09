@@ -1,33 +1,47 @@
-# Lab Architecture
+# Installation Guide
 
-## Overview
+## Prerequisites
 
-This lab simulates a basic enterprise environment with an attacker VM, victim endpoint, and SIEM for log analysis.
+- VirtualBox installed
+- Windows 11 ISO
+- Kali Linux ISO
+- Splunk Enterprise (free trial)
+- Splunk Universal Forwarder
+- sysmon & sysmonconfig-export.xml - Downloaded on the windows 11 VM
 
-## Components
+## Step 1: VM Setup
 
-| Component | Role | OS/Software | IP Address |
-|-----------|------|-------------|------------|
-| Host Machine | Splunk SIEM | Windows 11 | 192.168.1.100 |
-| Windows VM | Victim Endpoint | Windows 11 | 192.168.1.101 |
-| Kali VM | Attacker (optional) | Kali Linux | 192.168.1.102 |
+### Windows 11 VM
+1. Create new VM in VirtualBox
+2. Allocate 6 GB RAM, 3 CPU cores
+3. Network: Bridged Adapter
+4. Install Windows 11
 
-## Network Topology
-```
-[Kali VM] ←→ [Bridged Network] ←→ [Windows VM]
-                                        ↓
-                                  (Logs forwarded)
-                                        ↓
-                                  [Host Splunk]
-```
+### Kali Linux VM
+1. Create new VM
+2. Allocate 2.5 GB RAM, 2 CPU cores
+3. Network: Bridged Adapter
+4. Install Kali Linux
 
-## Data Flow
+## Step 2: Splunk Installation
 
-1. Windows VM generates logs (Event Viewer + Sysmon)
-2. Splunk Universal Forwarder collects logs
-3. Logs sent to Splunk on host via port 9997
-4. Analyst queries logs in Splunk Web
+### On Host Machine
+1. Download Splunk Enterprise
+2. Install to - C:\Program Files\Splunk
+3. Access web interface: http://localhost:8000
+4. Set admin credentials (username & password)
+
+### On Windows VM
+1. Download Splunk Universal Forwarder
+2. During installation:
+   - Receiving Indexer: 192.168.1.50:9997
+   - Set admin credentials (username & password)
+
+## Step 3: Sysmon Installation
+
+On Windows VM:
+- CMD (admin): **sysmon64.exe -accepteula -i sysmonconfig-export.xml**
 
 ---
 
-**Next:** [Installation Guide](./02-Installation.md)
+**Next:** [Configuration Guide](./03-Configuration.md)
