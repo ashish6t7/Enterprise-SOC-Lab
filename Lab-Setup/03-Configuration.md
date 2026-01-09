@@ -16,7 +16,7 @@
 
 ### Configure inputs.conf
 
-Create file: `C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf`
+Create file: `C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf` and insert the following code:
 ```ini
 [default]
 host = WindowsVM
