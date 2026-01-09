@@ -42,7 +42,7 @@ index=windows EventCode=4625 LogonType=3
 ## Indicators of Compromise (IOCs)
 
 - Multiple failed logins (>10) from single IP
-- Failed attempts across multiple user accounts
+- Failed login attempts across multiple user accounts
 - Time-clustered attempts (within minutes)
 
 ## Recommended Actions
