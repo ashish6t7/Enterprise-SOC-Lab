@@ -20,6 +20,8 @@
 
 ### - Configure inputs.conf
 
+-this inputs.conf includes both Windows "Event Logs" and "Sysmon logs"
+
 Create file: `C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf` and insert the following code:
 ```ini
 [default]
