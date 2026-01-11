@@ -6,7 +6,8 @@
 1. Settings → Forwarding and receiving → Configure receiving
 2. New Receiving Port: `9997`
 3. Save
-4. image - ![image alt]
+
+![image alt](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/45351a30976b663c60fbac1e98a216f92380726e/Lab-Setup/Setup-Images/receiving%20port%209997%20.png)
 
 ### - Create Index (in Splunk web)
 1. Settings → Indexes → New Index
