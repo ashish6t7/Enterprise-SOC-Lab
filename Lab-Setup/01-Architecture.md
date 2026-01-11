@@ -1,5 +1,7 @@
 # Lab Architecture
 
+![image alt](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/ebd7366e5e6857080434943988a7d27483116866/Lab-Setup/Setup-Images/01-network-diagram.png)
+
 ## Overview
 
 This lab simulates a basic enterprise environment with an attacker VM, victim endpoint, and SIEM for log analysis.
