@@ -2,13 +2,13 @@
 
 ## 1. Splunk Configuration (on Host)
 
-### Enable Receiving Port (in Splunk web)
+### - Enable Receiving Port (in Splunk web)
 1. Settings → Forwarding and receiving → Configure receiving
 2. New Receiving Port: `9997`
 3. Save
 4. image - ![image alt]
 
-### Create Index (in Splunk web)
+### - Create Index (in Splunk web)
 1. Settings → Indexes → New Index
 2. Index Name: `windows`
 3. Save
@@ -17,7 +17,7 @@
 
 ## 2. Universal Forwarder Configuration (on Windows VM)
 
-### Configure inputs.conf
+### - Configure inputs.conf
 
 Create file: `C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs.conf` and insert the following code:
 ```ini
@@ -48,7 +48,7 @@ renderXml = true
 
 ![image alt](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/b6a7c9e27da035783e594b77a43eb657eaad1d8b/Lab-Setup/Setup-Images/02-inputs-conf%20(Windows%2011%20VM)%20.png)
 
-### Restart Service
+### - Restart Service
 
 - Windows + R - services.msc -  SplunkForwarder - **Restart**, OR:
 ```cmd
@@ -58,14 +58,14 @@ net start SplunkForwarder
 
 ## 3. Firewall Configuration
 
-### Host (Inbound Rule)
+### - Host (Inbound Rule)
 - Port: 9997 TCP
 - Action: Allow
 - Profiles: All
 
 ![image alt](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/b6a7c9e27da035783e594b77a43eb657eaad1d8b/Lab-Setup/Setup-Images/04-Splunk%20inbound%20rule%20-%20port%209997%20(HOST).png)
 
-### Windows 11 VM (Outbound Rule)
+### - Windows 11 VM (Outbound Rule)
 - Port: 9997 TCP
 - Action: Allow
 - Profiles: All
@@ -74,7 +74,7 @@ net start SplunkForwarder
 
 ## Troubleshooting
 
-### Issue: Sysmon Logs Not Appearing, but Event Logs were...
+### - Issue: Sysmon Logs Not Appearing, but Event Logs were...
 
 **Problem:** Sysmon service running as wrong account
 
