@@ -26,6 +26,7 @@ Enterprise-SOC-Lab/
     ├── 01-Architecture.md
     ├── 02-Installation.md
     ├── 03-Configuration.md
+    ├── 04-validation.md
     └── Setup-Images/
 ```
 
@@ -35,7 +36,8 @@ Enterprise-SOC-Lab/
 - **[Architecture & Network Design](./Lab-Setup/01-Architecture.md)** - Lab components, network topology, data flow
 - **[Installation Guide](./Lab-Setup/02-Installation.md)** - VM setup, Splunk installation, Sysmon deployment
 - **[Configuration & Troubleshooting](./Lab-Setup/03-Configuration.md)** - Log forwarding, firewall rules, service permissions, troubleshooting notes
-
+- **[Final Results and Validation](./Lab-Setup/04-validation.md)** - showing the readiness of the Enterprise-SOC-Lab
+  
 ---
 
 ## 🔧 Key Skills Demonstrated
@@ -53,6 +55,7 @@ Enterprise-SOC-Lab/
 1. Start with [Architecture & Design](./Lab-Setup/01-Architecture.md) to understand the lab structure
 2. Review [Installation Guide](./Lab-Setup/02-Installation.md) for setup steps
 3. Check [Configuration & Troubleshooting](./Lab-Setup/03-Configuration.md) for real-world problem-solving
+4. Review [Final Results and Validation](./Lab-Setup/04-validation.md) to see the final outcome
 
 ---
 
