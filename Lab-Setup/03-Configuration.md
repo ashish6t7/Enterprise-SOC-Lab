@@ -139,11 +139,12 @@ Sysmon service was running under the wrong account, preventing log access by the
 
 After restarting the service, check Splunk for Sysmon logs:
 ```spl
-index=windows sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
-| head 10
+index=windows sourcetype=* | stats count by sourcetype
 ```
 
-If logs appear, the issue is resolved.
+If sysmon logs appear, the issue is resolved :
+
+![sysmon logs received successfully](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/3a0a555908e23c26f119301e1dcfda46d0a99456/Lab-Setup/Setup-Images/07-Splunk%20receiving%20Logs%20(on%20HOST).png)
 
 ---
 
