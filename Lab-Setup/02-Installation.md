@@ -19,7 +19,7 @@
 
 **VM Configuration:**
 1. Create new VM in VirtualBox
-2. Allocate **6 GB RAM**, **3 CPU cores**
+2. Allocate **7 GB RAM**, **3 CPU cores**
 3. Network Adapter: **Bridged Adapter**
 4. Install Windows 11 from ISO
 
@@ -55,7 +55,7 @@
    - Create admin username and password
    - Complete setup wizard
 
-![Splunk Enterprise Web Interface]([./Setup-Images/Splunk web interface.png](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/fd88614796fdc55fce3929485c3330d154f53cb9/Lab-Setup/Setup-Images/Splunk%20web%20interface.png))
+![Splunk Enterprise Web Interface](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/fd88614796fdc55fce3929485c3330d154f53cb9/Lab-Setup/Setup-Images/Splunk%20web%20interface.png)
 
 ---
 
@@ -68,7 +68,7 @@
    - **Receiving Indexer:** `192.168.31.50:9997`
    - Set admin username and password
 
-![Universal Forwarder Installation - Receiving Indexer](./Setup-Images/forwarder-installation-indexer.png)
+![Universal Forwarder Installation - Receiving Indexer](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/5a6b8ecdff8eadbf4a3ae2bfdb4dcbf8e69c77ba/Lab-Setup/Setup-Images/universal%20forwarder%20port%209997.png))
 
 **This configures the forwarder to send logs to your host Splunk instance.**
 
@@ -82,7 +82,7 @@
 
 2. **Open CMD as Administrator:**
 ```cmd
-cd C:\Tools
+cd C:\Users\victim\Downloads\Sysmon
 sysmon64.exe -accepteula -i sysmonconfig-export.xml
 ```
 
@@ -93,13 +93,15 @@ sc query Sysmon64
 
 **Expected output:** `STATE: RUNNING`
 
-![Sysmon Service Running](./Setup-Images/sysmon-service-running.png)
+![sysmon service running](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/7ff4594d1409b2623fc8da6fac1c29cb70748d3e/Lab-Setup/Setup-Images/sysmon%20Running%20CMD.png)
+
+![Sysmon Service Running](https://github.com/ashish6t7/Enterprise-SOC-Lab/blob/c81dff87a1be96fe7e0d18b9b9587e8ed288bdb7/Lab-Setup/Setup-Images/sysmon%20running%20successfully.png)
 
 ---
 
 ## Installation Complete
 
-**What you now have:**
+**What we now have:**
 - ✅ Host with Splunk Enterprise installed
 - ✅ Windows VM with Universal Forwarder installed
 - ✅ Windows VM with Sysmon monitoring installed
