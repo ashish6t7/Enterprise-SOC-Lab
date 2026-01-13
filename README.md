@@ -27,6 +27,7 @@ Enterprise-SOC-Lab/
     ├── 02-Installation.md
     ├── 03-Configuration.md
     ├── 04-validation.md
+    ├── 05-What_I_Learned.md
     └── Setup-Images/
 ```
 
@@ -56,6 +57,7 @@ Enterprise-SOC-Lab/
 2. Review [Installation Guide](./Lab-Setup/02-Installation.md) for setup steps
 3. Check [Configuration & Troubleshooting](./Lab-Setup/03-Configuration.md) for real-world problem-solving
 4. Review [Final Results and Validation](./Lab-Setup/04-validation.md) to see the final outcome
+5. [What I Learned](./Lab-Setup/05-What_I_Learned.md)
 
 ---
 
