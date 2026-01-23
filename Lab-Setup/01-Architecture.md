@@ -29,7 +29,7 @@ This lab simulates a basic enterprise environment with an attacker VM, victim en
 - VMs receive IP addresses from local router (same subnet as host)
 - Simulates real enterprise network connectivity
 
-![Network Adapter Configuration](./Setup-Images/bridged-networking.png)
+![Network Adapter Configuration](./Setup-Images/Windows11-bridged-networking.png)
 
 ---
 
